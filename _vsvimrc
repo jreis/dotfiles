@@ -1,0 +1,18 @@
+nnoremap <RETURN> o<ESC>
+nnoremap <S-RETURN> O<ESC>
+inoremap jj <ESC> 
+inoremap jk <ESC> 
+inoremap <C-RETURN> <ESC>A;<RETURN>
+
+set ignorecase
+set incsearch
+set smarttab
+set expandtab
+set history=50
+set smartcase
+set clipboard+=unnamed
+set incsearch
+set backspace=indent,eol,start
+
+nnoremap <c-s> :w<CR>
+inoremap <c-e> <ESC>$i
