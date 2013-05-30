@@ -1,0 +1,34 @@
+"hg6927
+
+loadplugins '\.(js|penta)$'
+group user
+
+" vim: set ft=pentadactyl:
+
+imap jj <ESC>
+imap jk <ESC> 
+
+set complete=sbl
+set guioptions=Cs
+
+set newtab=all
+
+map , <Leader>
+
+" toggle {{{
+    map -ex <Leader>tt :set showtabline!=always,never
+    map -ex <Leader>tm :set guioptions!=m
+    map -ex <Leader>tT :set guioptions!=T
+"}}}
+
+map -builtin h 5h
+map -builtin j 5j
+map -builtin k 5k
+map -builtin l 5l
+
+set editor='gvim -f +<line> +"sil! call cursor(0, <column>)" <file>'
+
+set hintkeys=asdfg;lkjh
+
+silent qmark p http://localhost:8080/express
+silent qmark b http://localhost:8081/express
